@@ -79,7 +79,7 @@ main{
     top: 660px;
     background: #623500;
     z-index: 0;
-    padding: 10px 30px 10px 30px;
+    padding: 15px 30px 15px 30px;
     border-radius: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
 }
@@ -138,7 +138,7 @@ main{
     font-weight: 600;
     font-size: 22px;
     line-height: 36px;
-    text-align: center;
+    text-align: justify;
     color: #000000;
     margin-bottom: 25px;
 }
