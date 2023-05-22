@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#touchVoltar {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 15px;
+    top: 107px;
+}
+
+#voltar{
+    position: absolute;
+    left: 7%;
+    top: 6%;
+}
+
+#box {
+    box-sizing: border-box;
+    position: absolute;
+    width: 293px;
+    height: 305px;
+    left: 33px;
+    top: 247px;
+    background: #FFFFFF;
+    border: 3px solid #4B311C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#icone {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 97px;
+    top: 23px;
+}
+
+#titulo {
+    position: absolute;
+    width: 245px;
+    height: 58px;
+    left: 24px;
+    top: 153px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #4B311C;
+}
+
+#txt {
+    position: absolute;
+    width: 213px;
+    height: 54px;
+    left: 40px;
+    top: 220px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#btn {
+    position: absolute;
+    width: 165px;
+    height: 60px;
+    left: 97px;
+    top: 607px;
+    background: #E3CAB6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#textbtn {
+    position: absolute;
+    width: 124px;
+    height: 44px;
+    left: 21px;
+    top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}

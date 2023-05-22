@@ -1,0 +1,111 @@
+ body {
+    width: 100%;
+    height: 100%;
+}
+main{
+    overflow: auto;
+}
+#voltar{
+    position: absolute;
+    left: 7%;
+    top: 14%;
+}
+svg:active path {
+    filter: invert(100%);
+  }
+.box:active{
+    filter: invert(100%);
+}
+
+#titulo {
+    position: absolute;
+    width: 275px;
+    height: 36px;
+    left: 43px;
+    top: 156px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+.searchBox{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 325px;
+    height: 52px;
+    left: 19px;
+    top: 212px;
+    
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    z-index: 1;
+}
+.iconSearch{
+position: absolute;
+width:37.5px;
+height: 37.5px;
+left: 38.25px;
+top: 221.25px;
+z-index: 2;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 328px;
+    height: 200px;
+    background: linear-gradient(0deg, #F3E8DF, #F3E8DF), linear-gradient(0deg, #F3E8DF, #F3E8DF), #F3E8DF;
+    border: 3px solid #956238;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto {
+    box-sizing: border-box;
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    top: 16px;
+    left: 17px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.txtBox {
+    position: absolute;
+    width: 175px;
+    height: 145px;
+    left: 140px;
+    top: 15px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+
+#box1 {
+    position: absolute;
+    top: 280px;
+    left: 16px;
+
+}
+
+#box2 {
+    position: absolute;
+    top: 497px;
+    left: 16px;
+}
+
+#box3 {
+    position: absolute;
+    top: 714px;
+    left: 16px;
+}

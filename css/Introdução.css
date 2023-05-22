@@ -1,0 +1,127 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#Box {
+  box-sizing: border-box;
+  position: absolute;
+  width: 92%;
+  height: 60%;
+  left: 4%;
+  top: 13%;
+  background: #FFFFFF;
+  border: 3px solid #4B311C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+#tituloBox {
+  position: absolute;
+  width: 84%;
+  height: 5%;
+  left: 8%;
+  top: 4%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#textBox {
+  position: absolute;
+  width: 90%;
+  height: 78%;
+  left: 5%;
+  top: 12%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+#button1{
+  left: 6%;
+  top: 76%;
+  background: #4B311C;
+}
+.button {
+  position: absolute;
+  width: 88%;
+  height: 9%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+#icon1 {
+  position: absolute;
+  width: 15%;
+  height: 65%;
+  left: 5%;
+  top: 16%;
+}
+
+#textBtn1 {
+  position: absolute;
+  width: 68%;
+  height: 41%;
+  left: 24%;
+  top: 30%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #F3E8DF;
+}
+
+#button2 {
+  left: 6%;
+  top: 87%;
+  background: #956238;
+}
+
+#icon2 {
+  position: absolute;
+  width: 14%;
+  height: 56%;
+  left: 5%;
+  top: 22%;
+}
+
+#textBtn2 {
+  position: absolute;
+  width: 53%;
+  height: 41%;
+  left: 28%;
+  top: 30%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #F3E8DF;
+}
+
+a{
+  color: #F3E8DF;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}

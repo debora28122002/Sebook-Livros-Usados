@@ -1,0 +1,33 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0px;
+    top: 0px;
+    background: #4B311C;
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloHeader {
+    position: absolute;
+    width: 43%;
+    height: 55%;
+    left: 5%;
+    top: 22%;
+}
+
+#menuHeader {
+    position: absolute;
+    width: 18%;
+    height: 80%;
+    right: 8%;
+    top: 10%;
+    background: #4B311C;
+}
+
+#iconMenu {
+    position: absolute;
+    left: 12%;
+    top: 24%;
+}

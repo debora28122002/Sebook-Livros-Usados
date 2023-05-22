@@ -1,0 +1,282 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+#touchVolta{
+    width: 45px;
+    height: 45px;
+    position: absolute;  
+    left: 15px;
+    top: 94px;
+    z-index: 1;
+}
+#voltar{
+    position: absolute;
+    left: 7%;
+    top: 6%;
+}
+
+#fundo {
+    position: absolute;
+    width: 360px;
+    height: 134px;
+    left: 0px;
+    top: 74px;
+    background: #E3CAB6;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+#nomeSebo {
+    position: absolute;
+    width: 132px;
+    height: 60px;
+    left: 80px;
+    top: 111.38px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: right;
+    color: #000000;
+    z-index: 1;
+}
+
+#divBar {
+    position: absolute;
+    width: 74.44px;
+    height: 0px;
+    border: 3px solid #000000;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 185px;
+    top: 137px;
+    border: 3px solid #000000;
+    z-index: 1;
+}
+
+#local {
+    position: absolute;
+    width: 115px;
+    height: 54px;
+    left: 235px;
+    top: 117.38px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    z-index: 1;
+}
+
+#bigNav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+}
+
+#fotoSebo {
+    position: absolute;
+    top: 141px;
+    left: 8px;
+    box-sizing: border-box;
+    width: 125px;
+    height: 125px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.caminho {
+    position: absolute;
+    z-index: 1;
+    width: 67px;
+    height: 33px;
+    margin-left: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+#caminho1 {
+    background: #BA7A46;
+    left: 143px;
+    top: 192px;
+}
+
+#caminho2 {
+    left: 213px;
+    top: 192px;
+    background: #956238;
+}
+
+#caminho3 {
+    left: 283px;
+    top: 192px;
+    background: #623500;
+}
+
+.textCaminho {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    width: 44px;
+    height: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-self: center;
+    justify-self: center;
+}
+
+.SearchBox {
+    box-sizing: border-box;
+    position: absolute;
+    width: 325px;
+    height: 52px;
+    left: 14px;
+    top: 325px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.iconSearch {
+    position: absolute;
+    left: 33.25px;
+    top: 334.25px;
+    z-index: 1;
+}
+
+#allbooks {
+    position: absolute;
+    width: 184px;
+    height: 29px;
+    left: 14px;
+    top: 422px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.boxBook {
+    display: flex;
+    flex-direction: row;
+}
+#line{
+    position: absolute;
+width: 100%;
+height: 0px;
+left: 0px;
+top: 400px;
+border: 1px solid #4B311C;
+}
+
+.subBoxBook {
+    position: absolute;
+    top: 483px;
+    left: 12px;
+    box-sizing: border-box;
+    width: 158px;
+    height: 264px;
+    background: #F3E8DF;
+    border: 3px solid #4B311C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoBook {
+    position: absolute;
+    box-sizing: border-box;
+    width: 120px;
+    height: 137px;
+    left: 19px;
+    top: 20px;
+    border: 3px solid #4B311C;
+    border-radius: 20px;
+}
+
+.tituloBook {
+    position: absolute;
+    top: 163px;
+    width: 105px;
+    height: 38px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+#book1 {
+    left: 12px;
+}
+
+#book2 {
+    left: 183px;
+}
+
+.precoBook {
+    position: absolute;
+    top: 213px;
+    left: 43px;
+    width: 72px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+#wppBox{
+    position: absolute;
+width: 203px;
+height: 56.08px;
+left: 142px;
+top: 232px;
+z-index: 2;
+background: #4B311C;
+border-radius: 25px;
+}
+#wppText{
+    position: absolute;
+width: 183.25px;
+height: 39.19px;
+left: 10px;
+top: 8px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.hidden{
+    display: none;
+}

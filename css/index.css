@@ -1,0 +1,64 @@
+body {
+  background: #FFFFFF;
+  height: 100%;
+}
+.corpo{
+  text-align: center;
+  padding: 70px 25px 70px 25px;
+}
+.button{
+  height: auto;
+  background: #E3CAB6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+
+#textButton1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+  align-self: center;
+  justify-content: center;
+}
+
+#textButton2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #000000;
+  align-self: center;
+  justify-content: center;
+}
+
+#txt1 {
+  font-family: 'Roboto';
+  font-style: Medium;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  color: #000000;
+  text-align: center;
+}
+
+#txt2 {
+  font-family: 'Roboto';
+  font-style: Medium;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
+
+a{
+  text-decoration: none;
+}
