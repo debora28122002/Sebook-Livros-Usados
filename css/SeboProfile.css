@@ -218,6 +218,7 @@ border: 1px solid #4B311C;
 .tituloBook {
     position: absolute;
     top: 163px;
+    left: 27px;
     width: 105px;
     height: 38px;
     font-family: 'Inter';
@@ -239,7 +240,7 @@ border: 1px solid #4B311C;
 
 .precoBook {
     position: absolute;
-    top: 213px;
+    top: 223px;
     left: 43px;
     width: 72px;
     height: 19px;

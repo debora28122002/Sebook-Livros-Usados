@@ -79,30 +79,30 @@
             Todos os Livros
         </div>
         <div class="boxBook">
-            <a href="Book.html">
-                <div class="subBoxBook" id="book1">
+            <div class="subBoxBook" id="book1" onclick="book1()">
+                <a href="Book.html">
                     <img src="img/crushcrush.jpg" alt="" class="fotoBook">
                     <div class="tituloBook">
                         Vida e Morte:
                         Crespúsculo
-                    </div>
+                    </div><br>
                     <div class="precoBook">
                         R$ 30,50
                     </div>
-                </div>
-            </a>
-            <a href="">
-                <div class="subBoxBook" id="book2">
+                </a>
+            </div>
+            <div class="subBoxBook" id="book2" onclick="book2()">
+                <a href="Book.html">
                     <img src="img/harry.jpg" alt="" class="fotoBook">
                     <div class="tituloBook">
                         Harry Potter e o
                         Cálice de Fogo
-                    </div>
+                    </div><br>
                     <div class="precoBook">
                         R$ 20,00
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </main>
     <!--
@@ -118,5 +118,13 @@
         </script>
     -->
     <script src="js/SeboProfile.js"></script>
+    <script>
+        function book1() {
+            localStorage.setItem('idBook', 'book1');
+        }
+        function book2() {
+            localStorage.setItem('idBook', 'book2');
+        }
+    </script>
 </body>
 </html>

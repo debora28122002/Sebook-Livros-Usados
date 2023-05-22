@@ -33,6 +33,9 @@ main{
     height: auto;
     left: 73px;
     top: 155px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #nomeBook {
