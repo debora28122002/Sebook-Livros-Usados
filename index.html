@@ -16,8 +16,8 @@
             qual desses dois
             você se identifica ?
         </div><br><br>
-        <a href="LoginSebo.html">
-            <div id="button1" class="button">
+        <a href="Login.html">
+            <div id="button1" class="button" onclick="button1()">
                 <div id="textButton1">
                     Sou Dono(a) de um sebo
                 </div>
@@ -34,6 +34,11 @@
             </div>
         </a>
     </div>
+    <script>
+        function button1() {
+            localStorage.setItem('idTelaAtual', 'button1');
+        }
+    </script>
 </body>
 
 </html>

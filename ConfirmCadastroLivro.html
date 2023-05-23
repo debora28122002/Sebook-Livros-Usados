@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/EditarPerfilVend.css"/>
+        <link rel="stylesheet" href="./css/ConfirmCadastroLivro.css"/>
         <meta name="theme-color" content="#FFFFFF">
-        <title>Editar Perfil</title>
+        <title>Confirmação Cadastro - Livro</title>
     </head>
 
     <body>
@@ -31,44 +31,26 @@
                 </a>
             </header>
             <div class="corpo">
-                <a href="#" id="back" onclick="Voltar()">
+                <a href="IntroduçãoUser.html">
                     <svg id="voltar" width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M6.125 28.625V24.875H19.4375C21.4062 24.875 23.1172 24.25 24.5703 23C26.0234 21.75 26.75 20.1875 26.75 18.3125C26.75 16.4375 26.0234 14.875 24.5703 13.625C23.1172 12.375 21.4062 11.75 19.4375 11.75H7.625L12.5 16.625L9.875 19.25L0.5 9.875L9.875 0.5L12.5 3.125L7.625 8H19.4375C22.4688 8 25.0703 8.98438 27.2422 10.9531C29.4141 12.9219 30.5 15.375 30.5 18.3125C30.5 21.25 29.4141 23.7031 27.2422 25.6719C25.0703 27.6406 22.4688 28.625 19.4375 28.625H6.125Z"
                             fill="#1C1B1F" />
                     </svg>
                 </a>
-                <form class="marginForms telasSm">
-                    <div class="positionImg2">
-                        <div class="inputImg">
-                            <label for="file-input">
-                                <img src="img/camera.png" alt="Imagem para upload">
-                            </label>
-                            <input id="file-input" type="file" accept="image/*" hidden>                        
+                <div class="conteudo">
+                    <div class="bloco">
+                        <img src="img/confirm.png" alt="Confirm" id="confirm" class="imgConfirm"><br>
+                        <div class="titleConfirm">
+                            <p>LIVRO ADICIONADO COM SUCESSO</p>
+                        </div>
+                        <div class="textConfirm">
+                            <p>Verifique se o livro foi adicionado corretamente no seu perfil.</p>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="telefone" class="labelTitle">TELEFONE:</label>
-                        <input type="number" class="form-control input" id="telefone">
-                    </div>
-                    <div class="form-group">
-                        <label for="senha" class="labelTitle">SENHA:</label>
-                        <input type="password" class="form-control input" id="senha">
-                    </div><br>
-                    <a href = "ConfirmEdicaoPerfil.html"><button type="button" class="btn btn-lg shadow-lg">EDITAR</button></a>
-                </form>
+                    <a href = "VerLivros.html"><button type="button" class="btn btn-lg shadow-lg">VER LIVROS</button></a><br><br><br>
+                </div>
             </div>
         </div>
-        <script>
-            function Voltar(){
-                var idTelaAnterior = localStorage.getItem('idTelaAtual');
-                var back = document.getElementById('back');
-                if(idTelaAnterior === 'button1'){
-                    back.href = 'IntroduçãoUser.html';
-                }else{
-                    back.href = 'PerfilPessoal.html';
-                }
-            }
-        </script>
-    </body>
+    </body>/
 </html>

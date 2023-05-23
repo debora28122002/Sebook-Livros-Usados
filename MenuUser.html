@@ -67,8 +67,8 @@
                         Cancelar
                     </div>
                 </a>
-                <a href="TipoDeAcesso.html">
-                    <div id="confirmarPopUp">
+                <a href="index.html">
+                    <div id="confirmarPopUp" onclick="sair()">
                         <div id="textConfirmPopUp">
                             Sim
                         </div>
@@ -78,6 +78,11 @@
         </div>
     </main>
     <script src="js/popUp3.js"></script>
+    <script>
+        function sair(){
+            localStorage.clear();
+        }
+    </script>
 </body>
 
 </html>

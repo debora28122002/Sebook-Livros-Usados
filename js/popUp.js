@@ -13,6 +13,8 @@ function popUpUserDono() {
   var textPopUp = document.getElementById('textPopUp');
   var textConfirmPopUp = document.getElementById('textConfirmPopUp');
   var linkElement = document.createElement('a');
+  var textTrade = document.getElementById('textTrade');
+  var trade = document.getElementById('trade');
 
 // usuário logado
 //btn: ao clicar no botão 'entrar' na tela 'login.html" o id 'btn' é armazenado no local Storage.
@@ -20,6 +22,7 @@ function popUpUserDono() {
     tituloPopUp.textContent = 'Iniciando Chat!';
     textPopUp.textContent = 'Por questões de segurança, nossa plataforma oferece a opção de compra diretamente com o vendedor. Está de acordo em finalizar o processo de compra diretamente pelo Whatsapp do Sebo?';
     textConfirmPopUp.textContent = 'Sim';
+    textTrade.textContent = 'Negociar/Comprar';
 
 //usuário não logado
 //btn3: ao clicar no botão 'Entrar sem login' na tela 'TipoDeAcesso.html" o id 'btn3' é armazenado no local Storage
@@ -30,7 +33,10 @@ function popUpUserDono() {
     linkElement.textContent = 'Sim';
     linkElement.href = 'TipoDeAcesso.html';
     textConfirmPopUp.appendChild(linkElement);
-  } 
+    textTrade.textContent = 'Negociar/Comprar';
+  } else if(idTelaAnterior === 'button1'){
+    trade.style.display = 'none';
+  }
 }
 
 function Book(){
@@ -45,6 +51,7 @@ function Book(){
     var texto = 'Autor(a): Stephenie Meyer<br>Ano: 2015<br>Unidades: 3<br>Preço: R$ 30,50';
     caracteristicas.innerHTML = texto;
     imgElement.src = 'img/crepusculo.png';
+
     fotoBook.appendChild(imgElement);
   } else if(idBook === 'book2'){
     nomeBook.textContent = 'Harry Potter e o Cálice de Fogo';
@@ -52,5 +59,20 @@ function Book(){
     caracteristicas.innerHTML = texto;
     imgElement.src = 'img/harryp.png';
     fotoBook.appendChild(imgElement);
+
+  }else if(idBook === 'book3'){
+    nomeBook.textContent = 'A Biografia Humana';
+    var texto = 'Autor(a): Laura Gutman<br>Ano: 2016<br>Unidades: 4<br>Preço: R$ 35,90';
+    caracteristicas.innerHTML = texto;
+    imgElement.src = 'img/biografia.png';
+    fotoBook.appendChild(imgElement);
+
+  }else if(idBook === 'book4'){
+    nomeBook.textContent = 'A psicologia das cores';
+    var texto = 'Autor(a): Eva Heller<br>Ano: 1986<br>Unidades: 2<br>Preço: R$ 25,50';
+    caracteristicas.innerHTML = texto;
+    imgElement.src = 'img/psicologia.png';
+    fotoBook.appendChild(imgElement);
   }
+  
 }
