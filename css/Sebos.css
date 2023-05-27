@@ -1,6 +1,7 @@
  body {
     font-family: 'Inter';
     font-style: normal;
+    text-align: center;
 }
 #voltar{
     position: absolute;
@@ -32,23 +33,38 @@ main{
     border: 3px solid #956238;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+    padding: 15px 25px 15px 25px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.textAlign{
+    margin-right: auto;
+    padding-left: 15px;
+}
 .foto {
-    box-sizing: border-box;
-    width: 114px;
-    height: 114px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 120px;
+    height: 115px;
+    float: left;
+    margin-right: auto;
+    border: 5px solid #956238;
+    border-radius: 100px;
 }
-
 .txtBox {
     font-weight: 600;
     font-size: 25px;
-    line-height: 30px;
     color: #000000;
 }
-
+.txtBox2{
+    font-size: 20px;
+    font-weight: 600;
+}
 a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
     text-decoration: none;
     color: #000000;
 }
