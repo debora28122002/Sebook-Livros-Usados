@@ -1,5 +1,7 @@
 body {
     text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 #touchVolta {
@@ -28,10 +30,6 @@ main{
 }
 
 #titulo {
-    left: 75px;
-    top: 155px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
@@ -47,10 +45,6 @@ main{
 }
 
 #subTitulo {
-    left: 34px;
-    top: 214px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -60,77 +54,43 @@ main{
 }
 
 #fundo {
-    left: 0px;
-    top: 374px;
     background: #E3CAB6;
 }
 
 #email {
-    left: 94px;
-    top: 394px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
     color: #000000;
-    z-index: 1;
-
 }
 
 #wpp {
-    left: 72px;
-    top: 534px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
     color: #000000;
-    z-index: 1;
 }
 
 .boxText {
-    left: 19px;
     background: #F3E8DF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    z-index: 1;
     height: 40px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-#box1 {
-    top: 452px;
-}
-
-#box2 {
-    top: 591px;
-}
-
 #boxText1 {
-    left: 55px;
-    top: 15px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    z-index: 2;
 }
 
 #boxTex2 {
-    left: 70px;
-    top: 15px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    z-index: 2;
 }

@@ -1,6 +1,11 @@
 body {
   background: #FFFFFF;
   height: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 500;
 }
 .corpo{
   text-align: center;
@@ -15,47 +20,24 @@ body {
   margin: 20px 0px 20px 0px;
 }
 
-
 #textButton1 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
   font-size: 30px;
-  line-height: 35px;
-  text-align: center;
   color: #000000;
-  align-self: center;
-  justify-content: center;
 }
 
 #textButton2 {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
   font-size: 30px;
-  line-height: 35px;
-  text-align: center;
   color: #000000;
-  align-self: center;
-  justify-content: center;
 }
 
 #txt1 {
-  font-family: 'Roboto';
-  font-style: Medium;
-  font-weight: 500;
   font-size: 35px;
-  line-height: 41px;
   color: #000000;
   text-align: center;
 }
 
 #txt2 {
-  font-family: 'Roboto';
-  font-style: Medium;
-  font-weight: 500;
   font-size: 30px;
-  line-height: 35px;
   color: #000000;
 }
 

@@ -1,4 +1,5 @@
-@import url('style.css');
+@import url('PopUp.css');
+@import url('Style.css');
 
 .text2{
     font-size: 25px;
@@ -27,6 +28,8 @@
 }
 .bloco{
     margin: 0px 40px 0px 40px;
+    position: relative;
+    top:20%
 }
 .icons{
     background: #E3CAB6;
@@ -34,18 +37,18 @@
     align-self: flex-end;
 }
 .bord1{
-    border-radius: 0px 0px 0px 20px;
-    border: 3px solid #4B311C;
-    border-bottom: 0px;
-}
-.bord2{
-    border-radius: 0px 0px 20px 0px;
-    border-top: 3px solid #4B311C;
+    border-radius: 0px 0px 0px 23px;
     border-right: 3px solid #4B311C;
 }
-
-
-
+.bord2{
+    border-radius: 0px 0px 23px 0px;
+}
+.icones{
+    border-top: 3px solid #4B311C;
+    margin: 0px -8px 0px -8px;
+    background: #E3CAB6;
+    border-radius: 0px 0px 23px 23px;
+}
 #embaçado {
     position: fixed;
     top: 0;
@@ -54,57 +57,19 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-.popUp {
-    box-sizing: border-box;
-    height: auto;
-    background: #FFFFFF;
-    border: 3px solid #4B311C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    text-align: center;
-    padding: 20px;
-    margin-right: 25px;
-    margin-left: 25px;
-}
 #tituloPopUp {
-    font-weight: 600;
-    font-size: 30px;
-    color: #000000;
-    line-height: 36px;
-    margin-bottom: 15px;
+   text-decoration: none;
 }
-
 #cancelarPopUp {
-    font-weight: 500;
-    font-size: 25px;
-    text-decoration-line: underline;
-    color: #000000;
     display: inline-block;
-    margin-right: 30px;
 }
 
 #confirmarPopUp {
-    box-sizing: border-box;
-    height: auto;
-    background: #E3CAB6;
-    border: 3px solid #4B311C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
     display: inline-block;
-    padding: 5px 30px 5px 30px;
 }
-
-#textConfirmPopUp {
-    font-weight: 500;
-    font-size: 25px;
-    color: #000000;
+.popUp{
+    text-align: center;
 }
-
-.hidden {
-    display: none;
-}
-
 @media screen and (max-width: 330px) {
     #cancelarPopUp{
         margin-right: 5px;

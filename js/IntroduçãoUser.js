@@ -11,7 +11,7 @@ function verificarIdTelaAnteriorIntro() {
     //usuário logado
     //btn: ao clicar no botão 'entrar' na tela 'login.html" o id 'btn' é armazenado no local Storage.
     if (idTelaAnterior === 'btn') {
-        paragraphText.textContent = 'NESSA PLATAFORMA DISPONIBILIZAMOS TODO O SUPORTE NECESSÁRIO PARA QUE VOCÊ, LEITOR DE LIVROS USADOS, POSSA TER MAIS FACILIDADE NA PROCURA DE LIVROS ACESSÍVEIS, ENTRE OUTRAS VANTAGENS. NOSSA META É APROXIMAR O CONTATO ENTRE SEBOS E LEITORES ATIVOS. QUALQUER DÚVIDA, ENTRE NO MENU, USE O "FALE CONOSCO" OU TIRE SUAS DÚVIDAS NO "MANUAL SEBOOK".';
+        paragraphText.textContent = 'Nessa plataforma disponibilizamos todo o suporte necessário para que você, leitor de livros usados, possa ter mais facilidade na procura de livros acessíveis, entre outras vantagens. Nossa meta é aproximar o contato entre sebos e leitores ativos. Qualquer dúvida, entre no menu, use o "Fale Conosco" ou tire suas dúvidas no "Manual Sebook".';
         
         linkElement.textContent = 'Editar Perfil';
         linkElement.href = 'PerfilPessoal.html';
@@ -33,7 +33,7 @@ function verificarIdTelaAnteriorIntro() {
         linkElement.textContent = 'Criar Conta';
         linkElement.href = 'TipoDeAcesso.html';
         elementoTexto.appendChild(linkElement);
-        paragraphText.textContent = 'NESSA PLATAFORMA DISPONIBILIZAMOS TODO O SUPORTE NECESSÁRIO PARA QUE VOCÊ, LEITOR DE LIVROS USADOS, POSSA TER MAIS FACILIDADE NA PROCURA DE LIVROS ACESSÍVEIS, ENTRE OUTRAS VANTAGENS. NOSSA META É APROXIMAR O CONTATO ENTRE SEBOS E LEITORES ATIVOS. QUALQUER DÚVIDA, ENTRE NO MENU, USE O "FALE CONOSCO" OU TIRE SUAS DÚVIDAS NO "MANUAL SEBOOK".';
+        paragraphText.textContent = 'Nessa plataforma disponibilizamos todo o suporte necessário para que você, leitor de livros usados, possa ter mais facilidade na procura de livros acessíveis, entre outras vantagens. Nossa meta é aproximar o contato entre sebos e leitores ativos. Qualquer dúvida, entre no menu, use o "Fale Conosco" ou tire suas dúvidas no "Manual Sebook".';
     
         imgElement.src = 'img/search.png';
         imagem1.appendChild(imgElement);
@@ -46,7 +46,7 @@ function verificarIdTelaAnteriorIntro() {
         linkElement.href = 'EditarPerfilUser.html';
         elementoTexto.appendChild(linkElement);
 
-        paragraphText.textContent = 'NESSA PLATAFORMA DISPONIBILIZAMOS TODO O SUPORTE NECESSÁRIO PARA QUE VOCÊ, VENDEDOR(A) DE LIVROS USADOS, POSSA TER UM APOIO E DIVULGAÇÃO MAIOR EM RELAÇÃO AO SEU TRABALHO. NOSSA META É APROXIMAR O CONTATO ENTRE SEBOS E LEITORES ATIVOS. QUALQUER DÚVIDA, ENTRE NO MENU, USE O "FALE CONOSCO" OU TIRE SUAS DÚVIDAS NO "MANUAL SEBOOK".';
+        paragraphText.textContent = 'Nessa plataforma disponibilizamos todo o suporte necessário para que você, vendedor(a) de livros usados, possa ter um apoio e divulgação maior em relação ao seu trabalho. Nossa meta é aproximar o contato entre sebos e leitores ativos. Qualquer dúvida, entre no menu, use o "Fale Conosco" ou tire suas dúvidas no "Manual Sebook".';
         imgElement.src = 'img/book.png';
         imagem1.appendChild(imgElement);
     }

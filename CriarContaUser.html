@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/EditarPerfilVend.css"/>
         <meta name="theme-color" content="#FFFFFF">
-        <title>Editar Perfil</title>
+        <title>Criar conta</title>
     </head>
 
     <body>
@@ -40,27 +40,27 @@
                 </a>
                 <form class="marginForms telasSm">
                     <div class="positionImg2">
-                        <div class="inputImg">
+                        <div class="inputImg" id="background">
                             <label for="file-input">
-                                <img src="img/camera.png" alt="Imagem para upload">
+                                <img src="img/camera.png" alt="Imagem para upload" id="imgCamera">
                             </label>
                             <input id="file-input" type="file" accept="image/*" hidden>                        
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="nome" class="labelTitle">NOME:</label>
+                        <label for="nome" class="labelTitle">Nome:</label>
                         <input type="text" class="form-control input" id="nome">
                     </div>
                     <div class="form-group">
-                        <label for="email" class="labelTitle">E-MAIL:</label>
+                        <label for="email" class="labelTitle">E-mail:</label>
                         <input type="email" class="form-control input" id="email">
                     </div>
                     <div class="form-group">
-                        <label for="senha" class="labelTitle">SENHA:</label>
+                        <label for="senha" class="labelTitle">Senha:</label>
                         <input type="password" class="form-control input" id="senha">
                     </div><br>
                     <div id="btn"  onclick="btn()">
-                        <a href = "IntroduçãoUser.html"><button type="button" class="btn btn-lg shadow-lg">CRIAR</button></a>
+                        <a href = "IntroduçãoUser.html"><button type="button" class="btn btn-lg shadow-lg">Criar</button></a>
                     </div>
                 </form>
             </div>
@@ -69,6 +69,23 @@
             function btn() {
                 localStorage.setItem('idTelaAtual', 'btn');
             }
+        </script>
+        <script>
+            const imageInput = document.getElementById('file-input');
+            const myImage = document.getElementById('imgCamera');
+            const background = document.getElementById('background');
+            imageInput.addEventListener('change', function() {
+            const selectedImage = imageInput.files[0];
+            if (selectedImage) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    myImage.src = event.target.result;
+                    background.style.backgroundColor = 'white';
+                    background.style.padding = '15px';
+                };
+                reader.readAsDataURL(selectedImage);
+            }
+            });
         </script>
     </body>
 </html>

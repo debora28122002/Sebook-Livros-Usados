@@ -1,5 +1,7 @@
 body {
     text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 #touchVolta {
@@ -28,10 +30,6 @@ main{
 }
 
 #titulo {
-    left: 75px;
-    top: 146px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
@@ -42,8 +40,6 @@ main{
 
 #box {
     box-sizing: border-box;
-    left: 28px;
-    top: 224px;
     background: #FFFFFF;
     border: 3px solid #4B311C;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -57,21 +53,14 @@ main{
 }
 #boxButton {
     box-sizing: border-box;
-    left: -3px;
-    top: 0px;
     height: 44px;
     background: #956238;
     border: 1px solid #4B311C;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    padding-bottom: 0px;
 }
 
 #textButton {
-    left: 35px;
-    top: 6px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
@@ -79,24 +68,16 @@ main{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#boxText {
-    left: 16px;
-    top: 71px;
-}
-
 .tituloText {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 21.09px;
+    line-height: 21px;
     text-decoration: underline;
     color: #000000;
     padding-bottom: 10px;
 }
 
 .text {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 18.75px;

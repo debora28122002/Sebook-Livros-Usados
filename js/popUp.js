@@ -22,7 +22,8 @@ function popUpUserDono() {
     tituloPopUp.textContent = 'Iniciando Chat!';
     textPopUp.textContent = 'Por questões de segurança, nossa plataforma oferece a opção de compra diretamente com o vendedor. Está de acordo em finalizar o processo de compra diretamente pelo Whatsapp do Sebo?';
     textConfirmPopUp.textContent = 'Sim';
-    textTrade.textContent = 'Negociar/Comprar';
+    var texto = 'Negociar<br>Comprar';
+    textTrade.innerHTML = texto;
 
 //usuário não logado
 //btn3: ao clicar no botão 'Entrar sem login' na tela 'TipoDeAcesso.html" o id 'btn3' é armazenado no local Storage
@@ -33,7 +34,8 @@ function popUpUserDono() {
     linkElement.textContent = 'Sim';
     linkElement.href = 'TipoDeAcesso.html';
     textConfirmPopUp.appendChild(linkElement);
-    textTrade.textContent = 'Negociar/Comprar';
+    var texto = 'Negociar<br>Comprar';
+    textTrade.innerHTML = texto;
   } else if(idTelaAnterior === 'button1'){
     trade.style.display = 'none';
   }
@@ -45,33 +47,36 @@ function Book(){
   var nomeBook = document.getElementById('nomeBook');
   var caracteristicas = document.getElementById('caracteristicas');
   var imgElement = document.createElement('img');
+  imgElement.style.maxWidth='150px';
+  imgElement.style.borderRadius='25px';
+  imgElement.style.border='3px solid #4B311C';
 
   if(idBook === 'book1'){
     nomeBook.textContent = 'Vida e Morte: Crespúsculo Reimaginado';
-    var texto = 'Autor(a): Stephenie Meyer<br>Ano: 2015<br>Unidades: 3<br>Preço: R$ 30,50';
+    var texto = 'Autor(a): Stephenie Meyer<br>Ano: 2015<br>Gênero: Romance<br>Unidades: 3<br>Preço: R$ 30,50';
     caracteristicas.innerHTML = texto;
-    imgElement.src = 'img/crepusculo.png';
+    imgElement.src = 'img/crepusculo.jpg';
 
     fotoBook.appendChild(imgElement);
   } else if(idBook === 'book2'){
     nomeBook.textContent = 'Harry Potter e o Cálice de Fogo';
-    var texto = 'Autor(a): J.K.Rowling<br>Ano: 2000<br>Unidades: 5<br>Preço: R$ 20,00';
+    var texto = 'Autor(a): J.K.Rowling<br>Ano: 2000<br>Gênero: Fantasia<br>Unidades: 5<br>Preço: R$ 20,00';
     caracteristicas.innerHTML = texto;
-    imgElement.src = 'img/harryp.png';
+    imgElement.src = 'img/harryp.jpg';
     fotoBook.appendChild(imgElement);
 
   }else if(idBook === 'book3'){
     nomeBook.textContent = 'A Biografia Humana';
-    var texto = 'Autor(a): Laura Gutman<br>Ano: 2016<br>Unidades: 4<br>Preço: R$ 35,90';
+    var texto = 'Autor(a): Laura Gutman<br>Ano: 2016<br>Gênero: Desenvolvimento pessoal e autoajuda<br>Unidades: 4<br>Preço: R$ 35,90';
     caracteristicas.innerHTML = texto;
-    imgElement.src = 'img/biografia.png';
+    imgElement.src = 'img/biografia.jpg';
     fotoBook.appendChild(imgElement);
 
   }else if(idBook === 'book4'){
     nomeBook.textContent = 'A psicologia das cores';
-    var texto = 'Autor(a): Eva Heller<br>Ano: 1986<br>Unidades: 2<br>Preço: R$ 25,50';
+    var texto = 'Autor(a): Eva Heller<br>Ano: 1986<br>Gênero: Design<br>Unidades: 2<br>Preço: R$ 25,50';
     caracteristicas.innerHTML = texto;
-    imgElement.src = 'img/psicologia.png';
+    imgElement.src = 'img/psicologia2.png';
     fotoBook.appendChild(imgElement);
   }
   

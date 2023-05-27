@@ -1,5 +1,8 @@
+@import url('PopUp.css');
 body {
     text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 #touchVolta {
@@ -26,23 +29,15 @@ main{
     left: 4%;
     top: 13%;
 }
-
 #fotoBook {
     margin-top: 30px;
     width: 150px;
     height: auto;
-    left: 73px;
-    top: 155px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    
 }
 
 #nomeBook {
-    left: 15px;
-    top: 433px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
@@ -53,141 +48,40 @@ main{
 }
 
 #fundo {
-    width: 100%;
-    left: 0;
-    top: 512px;
     background: #E3CAB6;
     z-index: 0;
 }
 
-
 #caracteristicas {
-    left: 29px;
-    top: 19px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    z-index: 1;
     padding: 20px;
 }
 
 #trade {
-    left: 87px;
-    top: 660px;
     background: #623500;
-    z-index: 0;
     padding: 15px 30px 15px 30px;
     border-radius: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
 }
 
 #textTrade {
-    top: 13.7px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
-    z-index: 1;
-}
-
-
-#embaçado {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-}
-
-#tituloPopUp {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 27px;
-    line-height: 42px;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #000000;
-    margin-bottom: 25px;
-}
-
-.popUp {
-    z-index: 3;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 3px solid #4B311C;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    margin: 25px;
-    padding: 20px;
-}
-
-#textPopUp {
-    left: 31px;
-    top: 27px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 36px;
-    text-align: justify;
-    color: #000000;
-    margin-bottom: 25px;
-}
-
-#cancelarPopUp {
-    display: inline-block;
-    left: 13px;
-    top: 165px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #000000;
-}
-
-#confirmarPopUp {
-    margin-left: 15px;
-    display: inline-block;
-    box-sizing: border-box;
-    left: 155px;
-    top: 152px;
-    background: #E3CAB6;
-    border: 3px solid #4B311C;
-    border-radius: 25px;
-    padding: 5px 20px 5px 20px;
-}
-
-#textConfirmPopUp {
-    left: 33px;
-    top: 13px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-    color: #000000;
-}
-
-.hidden {
-    display: none;
 }
 
 a{
     color: #000;
     text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
 }
 
 @media screen and (max-width: 290px) {

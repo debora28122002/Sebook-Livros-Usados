@@ -2,11 +2,10 @@ body {
   background: #FFFFFF;
   height: 100%;
   text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
 }
 
-svg:active path {
-  filter: invert(100%);
-}
 #voltar{
   position: absolute;
   left: 7%;
@@ -14,24 +13,15 @@ svg:active path {
 }
 
 #profile {
-  width: 210px;
+  max-width: 260px;
   height: auto;
-  left: 21%;
-  top: 18%;
   display: inline-block;
 }
 .margin{
-  margin-top: 160px;
-  margin-bottom: 20px;
+  margin-top: 70px;
 }
 
 #titulo {
-  width: 77% auto;
-  height: 6%;
-  left: 15%;
-  top: 50%;
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 44px;
@@ -39,16 +29,9 @@ svg:active path {
 }
 
 #subTitulo {
-  width: 72% auto;
-  height: 7%;
-  top: 57%;
-  left: 17%;
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  text-align: center;
   color: #000000;
   margin: 13px 0px 13px 0px;
 }
@@ -65,39 +48,20 @@ svg:active path {
   box-sizing: border-box;
   width: 84%;
   height: auto;
-  background: #FFFFFF;
+  background: #956238;
   border: 1px solid rgba(0, 0, 0, 0.21);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  justify-content: center;
-  align-items: center;
   padding: 13px;
   margin-bottom: 5px;
   display: inline-block;
 }
-#btn1 {
-  left: 8%;
-  top: 64%;
-}
-
-#btn2 { 
-  left: 8%;
-  top: 74%;
-}
-#btn3 { 
-  left: 8%;
-  top: 84%;
-}
-
 .txtBtn {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: rgba(0, 0, 0, 0.54);
+  color: #F3E8DF;
   text-align: center;
 }
-
 @media screen and (max-width: 280px) {
   #profile{
       width: 180px;

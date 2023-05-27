@@ -50,16 +50,18 @@ div a:hover{
     border: 3px solid #4B311C;
     background: #E3CAB6;
     border-radius: 20px;
-    Width: 140px;
+    Width: auto;
     Height: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding:40px 30px 40px 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;
 }
 .labelTitle{
     font-weight: 600;
     font-size: 20px;
+}
+#imgCamera{
+    max-width: 100px;
 }
 .input{
     border-radius: 25px;
