@@ -103,6 +103,7 @@
         </div><br>
     </main>
     <script>
+        const bordex = document.getElementById('bordex');
         const imageInput = document.getElementById('file-input');
         const myImage = document.getElementById('camera');
         imageInput.addEventListener('change', function() {
@@ -111,7 +112,9 @@
             const reader = new FileReader();
             reader.onload = function(event) {
                 myImage.src = event.target.result;
-                myImage.style.borderRadius='50px'
+                myImage.style.borderRadius='100%';
+                myImage.style.border = '2px solid #4B311C';
+                bordex.style.border='0px'
             };
             reader.readAsDataURL(selectedImage);
         }
