@@ -127,14 +127,13 @@ main{
 #wppBox{
     text-align: center;
     width: 150px;
-    height: 50px;
-    padding: 0px 10px 0px 10px;
+    height: 56px;
+    padding: 3px 10px 3px 10px;
+    margin-left: 27px;
     background: #4B311C;
     border-radius: 25px;
-    float:right;
     margin-top: 12px;
-    position: relative;
-    right: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #wppText{
     font-weight: 700;
@@ -187,6 +186,7 @@ button{
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .imgLivro{
     margin-top: 7px;
@@ -201,9 +201,27 @@ button{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-@media screen and (max-width: 305px) {
+@media screen and (max-width: 320px) {
     #fotoSebo{
         width: 100px;
         height: 95px;
+    }
+    #wppBox{
+        width: 120px;
+        height: 40px;
+        padding: 3px 5px 3px 5px;
+    }
+    #wppText{
+        font-size: 15px;
+            line-height: 18px;
+    }
+}
+@media screen and (max-width: 290px) {
+    #links{
+    }
+    .caminho{
+        
+    }
+    #wppBox{
     }
 }

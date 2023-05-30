@@ -1,147 +1,128 @@
 body {
-    width: 100%;
-    height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
-#touchVoltar {
-    position: absolute;
+#touchVolta {
     width: 45px;
     height: 45px;
+    position: absolute;
     left: 15px;
-    top: 107px;
 }
-
 #voltar{
     position: absolute;
     left: 7%;
-    top: 6%;
+    top: 20px;
+}
+.position{
+    margin-top: 60px;
+}
+main{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 10%;
+    right: 0%;
+    left: 0%;
 }
 #titulo{
-    position: absolute;
-width: 206px;
-height: 46px;
-left: 77px;
-top: 110px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 36px;
-text-align: center;
-text-decoration-line: underline;
-color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-decoration-line: underline;
+    color: #000000;
+    text-align: center;
 }
 #bordex{
     box-sizing: border-box;
-border-radius: 100%;
-position: absolute;
-width: 170px;
-height: 170px;
-left: 95px;
-top: 175px;
-background: #FFFFFF;
-border: 2px solid #4B311C;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    background: #FFFFFF;
+    border: 2px solid #4B311C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 #camera{
-    position: absolute;
-    top: 53px;
-    left: 55px;
+    max-width: 160px;
+    max-height: 160px;
 }
 #userName{
-    position: absolute;
-width: 256px;
-height: 38px;
-left: 52px;
-top: 365px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 36px;
-text-align: center;
-
-color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 5px;
 }
 #fundo{
-    position: absolute;
-width: 100%;
-height: 118px;
-left: 0px;
-top: 407px;
-background: #E3CAB6;
+    width: 100%;
+    background: #E3CAB6;
 }
 #dados{
-    position: absolute;
-width: 273px;
-height: 102px;
-left: 10px;
-top: 0px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 25px;
-line-height: 30px;
-color: #000000;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    padding: 15px;
 }
 #act{
-    position: absolute;
-width: 80px;
-height: 34px;
-left: 140px;
-top: 557px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 30px;
-text-align: center;
-text-decoration-line: underline;
-color: #000000;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .box{
+    text-align: center;
     margin-left: 4px;
     margin-right: 4px;
+    width: 33%;
+    height: auto;
 }
 .minibox{
-display: flex;
-flex-direction: column;
-box-sizing: border-box;
-position: relative;
-width: 130px;
-height: 150px;
-background: #4B311C;
-border: 3px solid #4B311C;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 25px;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #4B311C;
+    border: 3px solid #4B311C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
 }
 .txtMiniBox{
-    position: absolute;
-width: 154px;
-height: 38px;
-top: 12px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-color: #F3E8DF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F3E8DF;
+    padding-bottom: 8px;
 }
 .iconMiniBox{
-    position: absolute;
-    bottom: 20px;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 }
 #scroll{
-    position: absolute;
-    top: 623px;
     width: 100%; 
     overflow-x: auto; 
     white-space: nowrap; 
     display: flex;
-    flex-direction: row;
-  }
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 305px) {
+    #dados{
+        font-size: 20px;
+    }
+    #userName{
+        font-size: 25px;
+    }
+}
