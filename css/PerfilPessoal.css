@@ -47,8 +47,8 @@ main{
     margin: 0 auto;
 }
 #camera{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 130px;
+    max-height: 130px;
 }
 #userName{
     font-weight: 600;
