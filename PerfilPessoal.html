@@ -111,7 +111,6 @@
             const reader = new FileReader();
             reader.onload = function(event) {
                 myImage.src = event.target.result;
-                myImage.style.borderRadius = '100%'
             };
             reader.readAsDataURL(selectedImage);
         }
