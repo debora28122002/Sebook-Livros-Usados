@@ -21,7 +21,7 @@ function capturarValores() {
             break;
         }
     }
-    if ((valores[1].includes('@gmail.com') || valores[1].includes('@hotmail.com') || valores[1].includes('@outlook.com')) == true) {
+    if (valores[1].includes('@gmail.com') || valores[1].includes('@hotmail.com') || valores[1].includes('@outlook.com')) {
         domin = valores[1].split('@')
         if (mailVld.indexOf(domin[1]) == -1) {
             Test = 'E-mail Invalido'

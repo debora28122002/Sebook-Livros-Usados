@@ -1,15 +1,23 @@
-document.getElementById('delete').addEventListener('click', function () {
+function showPopUpDelete(event, elementoPai) {
   document.getElementById('embaçado').classList.remove('hidden');
-});
+  
+  var confirmarPopUp = document.getElementById('confirmarPopUp');
+  confirmarPopUp.onclick = function() {
+    confirmDelete(elementoPai);
+  };
+}
 
-document.getElementById('delete1').addEventListener('click', function () {
-  document.getElementById('embaçado').classList.remove('hidden');
-});
+function confirmDelete(elementoPai) {
+  document.getElementById('embaçado').classList.add('hidden');
+  
+  var div = document.getElementById(elementoPai);
+  if (div) {
+    div.remove();
+  } else {
+    console.log('Elemento não encontrado');
+  }
+}
 
-document.getElementById('delete2').addEventListener('click', function () {
-  document.getElementById('embaçado').classList.remove('hidden');
-});
-
-document.getElementById('delete3').addEventListener('click', function () {
-  document.getElementById('embaçado').classList.remove('hidden');
-});
+function hidePopUpDelete() {
+  document.getElementById('embaçado').classList.add('hidden');
+};
