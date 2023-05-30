@@ -53,7 +53,6 @@ div a:hover{
     Width: auto;
     Height: auto;
     padding:40px 30px 40px 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;
 }
 .labelTitle{
@@ -61,8 +60,6 @@ div a:hover{
     font-size: 20px;
 }
 #imgCamera{
-    max-width: 100px;
-    max-height: 100px;
 }
 .input{
     border-radius: 25px;
