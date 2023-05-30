@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/SeboProfile.css">
     <meta charset="UTF-8">
@@ -29,7 +30,7 @@
         </a>
     </header>
     <main>
-        <div id="fundo"></div>
+        
         <a href="SebosLogado.html" id="touchVolta">
             <svg id="voltar" width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -37,71 +38,61 @@
                     fill="#1C1B1F" />
             </svg>
         </a>
-        <div id="nomeSebo"></div>
-        <svg id="divBar" width="3" height="75" viewBox="0 0 3 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="1.5" y1="74.4386" x2="1.5" stroke="black" stroke-width="3" />
-        </svg>
-        <div id="local"></div>
-
-            <div id="links">
-                <img src="img/fotoSeboTorre.png" alt="" id="fotoSebo">
-                <div class="caminho" id="caminho1">
-                    <div class="textCaminho">
-                        Troca
-                    </div>
+        <div id="fundo">
+            <div class="inicio">
+                <div id="nomeSebo"></div>
+                <svg id="divBar" width="3" height="75" viewBox="0 0 3 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.5" y1="74.4386" x2="1.5" stroke="black" stroke-width="3" />
+                </svg>
+                <div id="local"></div>
+            </div>
+        </div>
+        <div id="links">
+            <img alt="" id="fotoSebo">
+            <div class="caminho color1">
+                <div class="textCaminho">
+                    Troca
                 </div>
-                <div class="caminho" id="caminho2">
-                    <div class="textCaminho">
-                        Venda
-                    </div>
+            </div>
+            <div class="caminho color2">
+                <div class="textCaminho">
+                    Venda
                 </div>
-                <div class="caminho" id="caminho3">
-                    <div class="textCaminho">
-                        Doação
+            </div>
+            <div class="caminho color3">
+                <div class="textCaminho">
+                    Doação
+                </div>
+                <div id="wppBox">
+                    <div id="wppText">
                     </div>
                 </div>
             </div>
-            <div id="wppBox">
-                <div id="wppText">
-                </div>
-            </div>
-        <svg class="iconSearch" width="38" height="38" viewBox="0 0 38 38" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M34.8333 37.75L21.7083 24.625C20.6667 25.4583 19.4687 26.1181 18.1146 26.6042C16.7604 27.0903 15.3194 27.3333 13.7917 27.3333C10.0069 27.3333 6.80382 26.0226 4.18229 23.401C1.56076 20.7795 0.25 17.5764 0.25 13.7917C0.25 10.0069 1.56076 6.80382 4.18229 4.18229C6.80382 1.56076 10.0069 0.25 13.7917 0.25C17.5764 0.25 20.7795 1.56076 23.401 4.18229C26.0226 6.80382 27.3333 10.0069 27.3333 13.7917C27.3333 15.3194 27.0903 16.7604 26.6042 18.1146C26.1181 19.4687 25.4583 20.6667 24.625 21.7083L37.75 34.8333L34.8333 37.75ZM13.7917 23.1667C16.3958 23.1667 18.6094 22.2552 20.4323 20.4323C22.2552 18.6094 23.1667 16.3958 23.1667 13.7917C23.1667 11.1875 22.2552 8.97396 20.4323 7.15104C18.6094 5.32812 16.3958 4.41667 13.7917 4.41667C11.1875 4.41667 8.97396 5.32812 7.15104 7.15104C5.32812 8.97396 4.41667 11.1875 4.41667 13.7917C4.41667 16.3958 5.32812 18.6094 7.15104 20.4323C8.97396 22.2552 11.1875 23.1667 13.7917 23.1667Z"
-                fill="#1C1B1F" />
-        </svg>
-        <form action="">
-            <input type="search" class="SearchBox">
+        </div><br><br>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="" type="submit">
+                <svg class="search-icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.8333 37.75L21.7083 24.625C20.6667 25.4583 19.4687 26.1181 18.1146 26.6042C16.7604 27.0903 15.3194 27.3333 13.7917 27.3333C10.0069 27.3333 6.80382 26.0226 4.18229 23.401C1.56076 20.7795 0.25 17.5764 0.25 13.7917C0.25 10.0069 1.56076 6.80382 4.18229 4.18229C6.80382 1.56076 10.0069 0.25 13.7917 0.25C17.5764 0.25 20.7795 1.56076 23.401 4.18229C26.0226 6.80382 27.3333 10.0069 27.3333 13.7917C27.3333 15.3194 27.0903 16.7604 26.6042 18.1146C26.1181 19.4687 25.4583 20.6667 24.625 21.7083L37.75 34.8333L34.8333 37.75ZM13.7917 23.1667C16.3958 23.1667 18.6094 22.2552 20.4323 20.4323C22.2552 18.6094 23.1667 16.3958 23.1667 13.7917C23.1667 11.1875 22.2552 8.97396 20.4323 7.15104C18.6094 5.32812 16.3958 4.41667 13.7917 4.41667C11.1875 4.41667 8.97396 5.32812 7.15104 7.15104C5.32812 8.97396 4.41667 11.1875 4.41667 13.7917C4.41667 16.3958 5.32812 18.6094 7.15104 20.4323C8.97396 22.2552 11.1875 23.1667 13.7917 23.1667Z" fill="#1C1B1F"/>
+                </svg>
+            </button> 
         </form>
         <div id="line"></div>
-        <div id="allbooks">
-            Todos os Livros
-        </div>
-        <div class="boxBook">
-            <div class="subBoxBook" id="book1" onclick="book1()">
-                <a href="Book.html">
-                    <img src="img/crushcrush.jpg" alt="" class="fotoBook">
-                    <div class="tituloBook">
-                        Vida e Morte:
-                        Crespúsculo
-                    </div><br>
-                    <div class="precoBook">
-                        R$ 30,50
-                    </div>
-                </a>
+        <div class="conteudo">
+            <div id="allbooks">
+                Todos os Livros
             </div>
-            <div class="subBoxBook" id="book2" onclick="book2()">
-                <a href="Book.html">
-                    <img src="img/harry.jpg" alt="" class="fotoBook">
-                    <div class="tituloBook">
-                        Harry Potter e o
-                        Cálice de Fogo
-                    </div><br>
-                    <div class="precoBook">
-                        R$ 20,00
-                    </div>
-                </a>
+            <div class="row">
+                <div class="col colunas">
+                    <a href="Book.html"><div onclick="book1()"><img src="img/crepusculo.jpg" alt="Crepúsculo" id="crepusculo" class="imgLivro"></div></a>
+                    <p class="descricao">Vida e Morte: Crepúsculo</p>
+                    <p class="descricao">R$ 30,50</p>
+                </div>
+                <div class="col colunas">
+                    <a href="Book.html"><div onclick="book2()"><img src="img/harryp.jpg" alt="Harry Potter" id="harry" class="imgLivro"></div></a>
+                    <p class="descricao">Harry Potter e o Cálice de Fogo</p>
+                    <p class="descricao">R$ 20,00</p>
+                </div>
             </div>
         </div>
     </main>

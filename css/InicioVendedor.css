@@ -14,7 +14,6 @@
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  text-decoration-line: underline;
   color: #000000;
 }
 #paragraphText{ 
@@ -24,10 +23,7 @@
   text-align: justify;
   color: #000000;
   text-indent: 20px;
-
-  
 }
-
 .Btn{
   height: 72px;
   background: #4B311C;
