@@ -31,6 +31,12 @@
     position: relative;
     top:20%
 }
+.imgLivro{
+    width: 120px;
+    height: 150px;
+    border: 3px solid #4B311C;
+    border-radius: 25px;
+}
 .icons{
     background: #E3CAB6;
     padding: 5px;
