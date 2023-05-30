@@ -1,0 +1,32 @@
+{
+  "background_color": "#b56919",
+  "description": "Plataforma para conectar os sebos aos leitores",
+  "dir": "auto",
+  "display": "fullscreen",
+  "name": "SeeBooK",
+  "orientation": "portrait",
+  "short_name": "SeboK",
+  "start_url": "https://SeboK",
+  "theme_color": "#faac5d",
+  "categories": [
+    "books"
+  ],
+  "screenshots": [
+    "https://seebook.netlify.app/"
+  ],
+  "icons": [
+    {
+      "src": "./img/biografia",
+      "sizes": "120x137",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "SeeBooK",
+      "short_name": "Sebok",
+      "url": "./img"
+    }
+  ],
+  "lang": "pt"
+}

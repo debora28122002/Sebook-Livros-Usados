@@ -1,0 +1,227 @@
+body {
+    font-family: 'Inter';
+    font-style: normal;
+}
+#touchVolta {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 15px;
+}
+header{
+    z-index: 2;
+}
+#voltar{
+    position: absolute;
+    left: 7%;
+    top: 20px;
+}
+.position{
+    margin-top: 100px;
+}
+.conteudo{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+main{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    right: 0%;
+    top: 10%;
+    z-index: 1;
+}
+.inicio{
+    display: flex;
+    align-self: center;
+    padding-top: 16px;
+    padding-left: 40px;
+    justify-content: center;
+    text-align: center;
+}
+#fundo {
+    border-bottom: 2px solid #E3CAB6;
+    background: #E3CAB6;
+    padding: 0px 15px 0px 15px;
+}
+#nomeSebo {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+#divBar {
+    background-color: #000000;
+    border: 3px solid #000000;
+    margin-right: 10px;
+}
+
+#local {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 7px;
+}
+#links {
+    background: linear-gradient(to bottom, #E3CAB6 50%, white 50%);
+    display: flex;
+    padding-left: 4%;
+    padding-right: 4%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#fotoSebo {
+    margin-right: 5px;
+    box-sizing: border-box;
+    width: 120px;
+    height: 115px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 5px solid #4B311C;
+    border-radius: 100px;
+}
+
+.caminho {
+    width: 65px;
+    height: 25px;
+    margin-left: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 3px;
+}
+.color1{    
+    background: #BA7A46;
+}
+.color2{
+    background: #956238;
+}
+.color3{
+    background: #623500;
+}
+.textCaminho {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#allbooks {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+#line{
+    width: 100%;
+    height: 0px;
+    border: 1px solid #4B311C;
+}
+#wppBox{
+    text-align: center;
+    width: 150px;
+    height: 56px;
+    padding: 3px 10px 3px 10px;
+    margin-left: 27px;
+    background: #4B311C;
+    border-radius: 25px;
+    margin-top: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#wppText{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hidden{
+    display: none;
+}
+input::placeholder {
+    color: black !important;
+}
+button{
+    border: white;
+    background-color: white;
+}
+.search-icon {
+    fill: #956238; 
+    height: 40px;
+}
+.form-control:focus{
+    border-color: #956238;
+    box-shadow: 0 0 0 0.2rem #956238;
+    outline: 0;
+}
+.form-control{
+    margin-right: 10px;
+    height: 50px;
+    border: 1px solid #956238;
+}
+.form-inline{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-left: 4%;
+    margin-right: 4%
+}
+.colunas{
+    margin: 10px 5px 0px 5px;
+    border: 3px solid #4B311C;
+    width: auto;
+    padding: 8px 8px 0px 8px;
+    text-align: center;
+    border-radius: 25px;
+    background: #F3E8DF;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.imgLivro{
+    margin-top: 7px;
+    width: 120px;
+    height: 150px;
+    border: 3px solid #4B311C;
+    border-radius: 20px;
+}
+.descricao{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 320px) {
+    #fotoSebo{
+        width: 100px;
+        height: 95px;
+    }
+    #wppBox{
+        width: 120px;
+        height: 40px;
+        padding: 3px 5px 3px 5px;
+    }
+    #wppText{
+        font-size: 15px;
+            line-height: 18px;
+    }
+}
+@media screen and (max-width: 290px) {
+    #links{
+    }
+    .caminho{
+        
+    }
+    #wppBox{
+    }
+}

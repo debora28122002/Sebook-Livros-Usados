@@ -1,0 +1,6 @@
+@import url('style.css');
+
+.positionImg2{
+    display: flex;
+    justify-content: center;
+}
