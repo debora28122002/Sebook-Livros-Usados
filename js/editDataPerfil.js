@@ -9,7 +9,7 @@ function editDataPerfil() {
     }
     if (N.length == 9) {
         if (N[0] == 9) {
-            alterNumber = N[0] + '.' + N[1] + N[2] + N[3] + N[4] + '-' + N[5] + N[6] + N[7] + N[8]
+            alterNumber = N[0] + N[1] + N[2] + N[3] + N[4] + N[5] + N[6] + N[7] + N[8]
             localStorage.setItem('numero', alterNumber);
         }
         else {

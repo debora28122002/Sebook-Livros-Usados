@@ -5,7 +5,8 @@ function enviarDados(valores) {
     var dados = {
         "nome": valores[0],
         "email": valores[1],
-        "senha": valores[2]
+        "senha": valores[2],
+        "number": valores[3]
     };
     console.log(dados)
     fetch(url, {

@@ -54,14 +54,56 @@
                     <div class="form-group">
                         <label for="senha" class="labelTitle">Senha:</label>
                         <input type="password" class="form-control input" id="senha">
+                        <input type="checkbox" onclick="mostrarOcultarSenha()">   Mostrar Senha
                     </div><br>
-                    <button type="button" class="btn btn-lg shadow-lg" onclick="editDataPerfil()">Editar</button>
+                    <button type="button" class="btn btn-lg shadow-lg" onclick="editDataPerfil();armazenarImagem();">Editar</button>
                 </form>
             </div>
         </div>
         <script src="js/editDataPerfil.js"></script>
         <script src="js/sendEdit.js"></script>
         <script src="js/addPhoto.js"></script>
+        <script src="js/viewSenha.js"></script>
         <script src="aplicações/voltar.js"></script>
+        <script>
+            var idTelaAnterior = localStorage.getItem('idTelaAtual');
+            if (idTelaAnterior === 'btn'){
+                var number = localStorage.getItem('numero')
+                var senhaUser = localStorage.getItem('senha');
+                const telefone = document.getElementById('telefone');
+                const password = document.getElementById('senha');
+                telefone.value = number;
+                password.value = senhaUser;
+                window.addEventListener('DOMContentLoaded', function() {
+                    var imagemArmazenada = localStorage.getItem("imagem");
+                    if (imagemArmazenada) {
+                        const background = document.getElementById('background');
+                        var imgElement = document.getElementById("imgCamera");
+                        imgElement.src = imagemArmazenada;
+                        background.style.backgroundColor = 'white';
+                        background.style.border = '0px';
+                        background.style.borderRadius = '0px';
+                        background.style.padding = '0px';
+                        myImage.style.borderRadius='25px';
+                        myImage.style.width='126px'
+                        myImage.style.height='141px'
+                        myImage.style.border = '2px solid #4B311C';
+                    }
+                });
+            }
+            function armazenarImagem() {
+                var inputElement = document.getElementById("file-input");
+                
+                if (inputElement.files && inputElement.files[0]) {
+                  var fileReader = new FileReader();
+                  fileReader.onload = function(event) {
+                    var imagem = event.target.result;
+                    localStorage.setItem("imagem", imagem);
+                  }
+                  fileReader.readAsDataURL(inputElement.files[0]);
+                }
+              }
+        </script>
+    
     </body>
 </html>

@@ -6,7 +6,8 @@ function capturarValores() {
     var input1 = document.getElementById("nome").value;
     var input2 = document.getElementById("email").value;
     var input3 = document.getElementById("senha").value;
-    var valores = [input1, input2, input3];
+    var input4 = document.getElementById("number").value;
+    var valores = [input1, input2, input3, input4];
     var regexCaractereEspecial = /[!@#$%^&*(),.'?":{}|<>£¢¬\-_+=§°₢;ºª´`/]/;
     var regexNumero = /[0-9]/;
     const mailVld = ['outlook.com', 'outlook.com.br', 'hotmail.com', 'gmail.com']
@@ -36,11 +37,30 @@ function capturarValores() {
     if (Test == 'Cadastrado') {
         //enviarDados(valores);
         window.alert(Test)
+        localStorage.setItem('nome', valores[0])
         localStorage.setItem('login', valores[1])
         localStorage.setItem('senha', valores[2])
+        localStorage.setItem('numero', valores[3])
+        armazenarImagem()
         window.location.href ='IntroduçãoUser.html'
     }
     else {
         window.alert(Test);
     }
 }
+
+
+
+function armazenarImagem() {
+    var inputElement = document.getElementById("file-input");
+    
+    if (inputElement.files && inputElement.files[0]) {
+      var fileReader = new FileReader();
+      fileReader.onload = function(event) {
+        var imagem = event.target.result;
+        localStorage.setItem("imagem", imagem);
+      }
+      fileReader.readAsDataURL(inputElement.files[0]);
+    }
+  }
+  

@@ -41,16 +41,12 @@
         <div class="position">
             <div id="titulo">Perfil Pessoal</div><br>
             <div id="bordex">
-                <label for="file-input">
-                    <img src="img/camera.png" alt="Imagem para upload" id="camera">
-                </label>
-                <input id="file-input" type="file" accept="image/*" hidden>
+                <img src="img/camera.png" alt="Imagem para upload" id="camera">
             </div><br>
-            <div id="userName">Nome do Usúario</div>
+            <div id="userName"></div>
             <a href="EditarPerfilUser.html">
                 <div id="fundo">
-                    <div id="dados">
-                       
+                    <div id="dados">  
                     </div>
                 </div>
             </a>
@@ -102,39 +98,39 @@
         </div><br>
     </main>
     <script>
-        const bordex = document.getElementById('bordex');
-        const imageInput = document.getElementById('file-input');
-        const myImage = document.getElementById('camera');
-        imageInput.addEventListener('change', function() {
-        const selectedImage = imageInput.files[0];
-        if (selectedImage) {
-            const reader = new FileReader();
-            reader.onload = function(event) {
-                myImage.src = event.target.result;
-                myImage.style.borderRadius='100%';
-                myImage.style.width='170px'
-                myImage.style.height='170px'
-                myImage.style.border = '2px solid #4B311C';
-                bordex.style.border='0px'
-            };
-            reader.readAsDataURL(selectedImage);
-        }
-        });
-    </script>
-    <script>
+        var nome = localStorage.getItem('nome')
         var number = localStorage.getItem('numero')
         var email = localStorage.getItem('login');
         var senha = localStorage.getItem('senha');
         var quebraLinha = document.createElement('br');
-        var numberTexto = document.createTextNode('Phone: '+number);
+        var quebraLinha2 = document.createElement('br');
+        var numberTexto = document.createTextNode('Telefone: '+number);
         var emailTexto = document.createTextNode('E-mail: '+email);
         var senhaTexto = document.createTextNode('Senha: '+senha);
+        var nomeTexto = document.createTextNode(nome);
         var divDados = document.getElementById('dados');
+        var userName = document.getElementById('userName');
         divDados.appendChild(emailTexto);
         divDados.appendChild(quebraLinha);
         divDados.appendChild(numberTexto);
-        divDados.appendChild(quebraLinha);
+        divDados.appendChild(quebraLinha2);
         divDados.appendChild(senhaTexto);
+        userName.appendChild(nomeTexto);
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const bordex = document.getElementById('bordex');
+            var imagemArmazenada = localStorage.getItem("imagem");
+            if (imagemArmazenada) {
+                var imgElement = document.getElementById("camera");
+                imgElement.src = imagemArmazenada;
+                imgElement.style.borderRadius='100%';
+                imgElement.style.width='170px'
+                imgElement.style.height='170px'
+                imgElement.style.border = '2px solid #4B311C';
+                bordex.style.border='0px'
+            }
+        });    
     </script>
     <script src="aplicações/voltar.js"></script>
 </body>

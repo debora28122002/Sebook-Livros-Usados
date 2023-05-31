@@ -29,6 +29,7 @@
                 <div class="form-group">
                     <label for="textbox2" id="label2">Senha:</label><br>
                     <input type="password" name="senha" class="form-control" id="textbox2" >
+                    <input type="checkbox" onclick="mostrarOcultarSenha()">   Mostrar Senha
                 </div>
             </form>
             <br>
@@ -44,5 +45,15 @@
     <script src="js/Login.js"></script>
     <script src="js/loginDeb.js"></script>
     <script src="aplicações/voltar.js"></script>
+    <script>
+        function mostrarOcultarSenha(){
+            var senha = document.getElementById("textbox2");
+            if(senha.type == "password"){
+              senha.type="text";
+            }else{
+              senha.type="password";
+            }
+        }
+    </script>
 </body>
 </html>

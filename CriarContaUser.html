@@ -56,8 +56,13 @@
                         <input type="email" class="form-control input" id="email">
                     </div>
                     <div class="form-group">
+                        <label for="number" class="labelTitle">Telefone:</label>
+                        <input type="number" class="form-control input" id="number">
+                    </div>
+                    <div class="form-group">
                         <label for="senha" class="labelTitle">Senha:</label>
                         <input type="password" class="form-control input" id="senha">
+                        <input type="checkbox" onclick="mostrarOcultarSenha()">   Mostrar Senha
                     </div><br>
                     <div id="btn"  onclick="buton()">
                         <button type="button" class="btn btn-lg shadow-lg">Criar</button>
@@ -70,6 +75,7 @@
         <script src="aplicações/validação.js"></script>
         <script src="js/funcDebCriarContaUser.js"></script>
         <script src="aplicações/voltar.js"></script>
+        <script src="js/viewSenha.js"></script>
     </body>
 </html>
 
