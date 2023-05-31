@@ -22,15 +22,15 @@ body {
 }
 
 #titulo {
-  font-weight: 400;
-  font-size: 36px;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 44px;
   color: #000000;
 }
 
 #subTitulo {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 22px;
   color: #000000;
   margin: 13px 0px 13px 0px;
@@ -57,7 +57,7 @@ body {
 }
 .txtBtn {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 28px;
   color: white;
   text-align: center;

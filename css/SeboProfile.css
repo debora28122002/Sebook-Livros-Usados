@@ -60,7 +60,7 @@ main{
 
 #local {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 18px;
     color: #000000;
     margin-top: 7px;
@@ -112,7 +112,7 @@ main{
 
 #allbooks {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 29px;
     text-decoration-line: underline;
     color: #000000;
@@ -137,7 +137,7 @@ main{
 }
 #wppText{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
@@ -197,7 +197,7 @@ button{
 }
 .descricao{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -213,15 +213,7 @@ button{
     }
     #wppText{
         font-size: 15px;
-            line-height: 18px;
+        line-height: 18px;
     }
 }
-@media screen and (max-width: 290px) {
-    #links{
-    }
-    .caminho{
-        
-    }
-    #wppBox{
-    }
-}
+

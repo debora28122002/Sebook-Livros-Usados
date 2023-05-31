@@ -14,7 +14,7 @@
 }
 #tituloPopUp {
     font-weight: 600;
-    font-size: 27px;
+    font-size: 21px;
     line-height: 42px;
     text-align: center;
     text-decoration-line: underline;
@@ -35,7 +35,7 @@
 
 #textPopUp {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 36px;
     text-align: justify;
     color: #000000;
@@ -45,7 +45,7 @@
 #cancelarPopUp,#cancelarPopUpEX {
     display: inline-block;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 17px;
     line-height: 30px;
     text-align: center;
     text-decoration-line: underline;
@@ -64,7 +64,7 @@
 
 #textConfirmPopUp {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 17px;
     line-height: 30px;
     text-align: center;
     color: #000000;

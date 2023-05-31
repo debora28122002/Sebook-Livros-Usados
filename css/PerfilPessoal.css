@@ -27,7 +27,7 @@ main{
 }
 #titulo{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 36px;
     text-decoration-line: underline;
     color: #000000;
@@ -50,7 +50,7 @@ main{
 }
 #userName{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 21px;
     line-height: 36px;
     color: #000000;
     text-align: center;
@@ -62,14 +62,14 @@ main{
 }
 #dados{
     font-weight: 600;
-    font-size: 25px;
+    font-size: 21px;
     line-height: 30px;
     color: #000000;
     padding: 15px;
 }
 #act{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 21px;
     line-height: 30px;
     text-decoration-line: underline;
     color: #000000;
@@ -98,7 +98,7 @@ main{
 }
 .txtMiniBox{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 24px;
     color: #F3E8DF;
     padding-bottom: 8px;
@@ -117,11 +117,4 @@ main{
 a{
     text-decoration: none;
 }
-@media screen and (max-width: 305px) {
-    #dados{
-        font-size: 20px;
-    }
-    #userName{
-        font-size: 25px;
-    }
-}
+

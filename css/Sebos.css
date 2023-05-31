@@ -21,7 +21,7 @@ main{
 }
 #titulo {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 36px;
     text-align: center;
     color: #000000;
@@ -54,11 +54,11 @@ main{
 }
 .txtBox {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 21px;
     color: #000000;
 }
 .txtBox2{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 a{
@@ -99,7 +99,6 @@ button{
     .textAlign{
         text-align: center;
         padding-top: 10px;
-
     }
     .foto{
         float:none;

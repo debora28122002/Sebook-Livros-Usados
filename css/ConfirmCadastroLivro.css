@@ -10,14 +10,14 @@
 }
 .titleConfirm{
     font-weight: 900;
-    font-size: 23px;
+    font-size: 21px;
     color:#4B311C;
     line-height: 28px;
 }
 .textConfirm{
     font-weight: bold;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 17px;
 }
 .imgConfirm{
     width: 110px;
@@ -25,8 +25,8 @@
 }
 .conteudo{
     position: relative;
-    top: 21%;
+    top: 6%;
 }
 .btn{
-    font-size: 18px;
+    font-size: 21px;
 }

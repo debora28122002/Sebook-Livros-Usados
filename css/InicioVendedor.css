@@ -11,14 +11,14 @@
 
 #titleText{
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 36px;
   text-align: center;
   color: #000000;
 }
 #paragraphText{ 
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 22px;
   text-align: justify;
   color: #000000;
@@ -45,7 +45,7 @@
 }
 .text{
   font-weight: 700;
-  font-size: 25px;
+  font-size: 21px;
   line-height: 30px;
   color: #F3E8DF;
   text-align: center;
