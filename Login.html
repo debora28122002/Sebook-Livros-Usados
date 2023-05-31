@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/Login.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="loginDono()">
     <div class="margin">
         <div onclick="voltar()" id="touchVoltar">
             <div id="touchVoltar">
@@ -34,8 +34,8 @@
             </form>
             <br>
         </div>
-        <div class="text-center" onclick="acessoLogin()">
-            <div id="btn" onclick="btn()" class="btn btn-lg shadow-lg">
+        <div class="text-center" onclick="acessoLogin();btn();">
+            <div id="btn" class="btn btn-lg shadow-lg">
                 <div id="textbtn">
                     Entrar
                 </div>

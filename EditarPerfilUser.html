@@ -56,13 +56,12 @@
                         <input type="password" class="form-control input" id="senha">
                         <input type="checkbox" onclick="mostrarOcultarSenha()">   Mostrar Senha
                     </div><br>
-                    <button type="button" class="btn btn-lg shadow-lg" onclick="editDataPerfil();armazenarImagem();">Editar</button>
+                    <button type="button" class="btn btn-lg shadow-lg" onclick="editDataPerfil();armazenarImagem();" id="editarUser">Editar</button>
                 </form>
             </div>
         </div>
         <script src="js/editDataPerfil.js"></script>
         <script src="js/sendEdit.js"></script>
-        <script src="js/addPhoto.js"></script>
         <script src="js/viewSenha.js"></script>
         <script src="aplicações/voltar.js"></script>
         <script>
@@ -72,9 +71,10 @@
                 var senhaUser = localStorage.getItem('senha');
                 const telefone = document.getElementById('telefone');
                 const password = document.getElementById('senha');
+                const myImage = document.getElementById('imgCamera');
+                const background = document.getElementById('background');
                 telefone.value = number;
                 password.value = senhaUser;
-                window.addEventListener('DOMContentLoaded', function() {
                     var imagemArmazenada = localStorage.getItem("imagem");
                     if (imagemArmazenada) {
                         const background = document.getElementById('background');
@@ -89,21 +89,69 @@
                         myImage.style.height='141px'
                         myImage.style.border = '2px solid #4B311C';
                     }
+                function armazenarImagem() {
+                    var inputElement = document.getElementById("file-input");
+                    
+                    if (inputElement.files && inputElement.files[0]) {
+                      var fileReader = new FileReader();
+                      fileReader.onload = function(event) {
+                        var imagem = event.target.result;
+                        localStorage.setItem("imagem", imagem);
+                      }
+                      fileReader.readAsDataURL(inputElement.files[0]);
+                    }
+                }
+            }
+    
+        </script>
+        <script>
+            var idTelaAnterior = localStorage.getItem('idTelaAtual');
+            if (idTelaAnterior === 'button1'){
+                const editarUser = document.getElementById('editarUser');
+                editarUser.addEventListener('click', function () {
+                    localStorage.setItem('confirmeishon','editPerfil');
+                    window.location.href = 'Confirmação.html';
+                });
+                const telefone = document.getElementById('telefone');
+                telefone.value = '987654321';
+                const senha = document.getElementById('senha');
+                senha.value='minhasenha789'
+                const imageInput = document.getElementById('file-input');
+                const myImage = document.getElementById('imgCamera');
+                const background = document.getElementById('background');
+                imageInput.disabled=true;
+                myImage.src='img/avatarDono.webp'
+                background.style.backgroundColor = 'white';
+                background.style.border = '0px';
+                background.style.borderRadius = '0px';
+                background.style.padding = '0px';
+                myImage.style.borderRadius='25px';
+                myImage.style.width='126px'
+                myImage.style.height='141px'
+                myImage.style.border = '2px solid #4B311C';
+            }else if(idTelaAnterior === 'btn'){
+                const imageInput = document.getElementById('file-input');
+                const myImage = document.getElementById('imgCamera');
+                const background = document.getElementById('background');
+                imageInput.addEventListener('change', function() {
+                const selectedImage = imageInput.files[0];
+                if (selectedImage) {
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        myImage.src = event.target.result;
+                        background.style.backgroundColor = 'white';
+                        background.style.border = '0px';
+                        background.style.borderRadius = '0px';
+                        background.style.padding = '0px';
+                        myImage.style.borderRadius='25px';
+                        myImage.style.width='126px'
+                        myImage.style.height='141px'
+                        myImage.style.border = '2px solid #4B311C';
+                    };
+                    reader.readAsDataURL(selectedImage);
+                }
                 });
             }
-            function armazenarImagem() {
-                var inputElement = document.getElementById("file-input");
-                
-                if (inputElement.files && inputElement.files[0]) {
-                  var fileReader = new FileReader();
-                  fileReader.onload = function(event) {
-                    var imagem = event.target.result;
-                    localStorage.setItem("imagem", imagem);
-                  }
-                  fileReader.readAsDataURL(inputElement.files[0]);
-                }
-              }
         </script>
-    
     </body>
 </html>

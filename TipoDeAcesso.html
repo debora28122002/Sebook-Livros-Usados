@@ -32,14 +32,14 @@
         login na nossa plataforma.
     </div><br>
     <a href="Login.html">
-        <div id="btn1" class="btn">
+        <div id="btn1" class="btn" onclick="btn()">
             <div class="txtBtn">
                 Entrar na Conta
             </div>
         </div>
     </a>
     <a href="CriarContaUser.html">
-        <div id="btn2" class="btn">
+        <div id="btn2" class="btn" onclick="btn()">
             <div class="txtBtn">
                 Criar Conta
             </div>
@@ -60,6 +60,9 @@
         });
         function btn3() {
             localStorage.setItem('idTelaAtual', 'btn3');
+        }
+        function btn() {
+            localStorage.setItem('idTelaAtual', 'btn');
         }
       </script>
       <script src="aplicações/voltar.js"></script>
