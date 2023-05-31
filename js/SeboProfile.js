@@ -14,15 +14,19 @@ function Sebos() {
     var idBox = localStorage.getItem('idBox');
     var nomeSebo = document.getElementById('nomeSebo');
     var local = document.getElementById('local');
+    var fotoSebo = document.getElementById('fotoSebo');
 
     if (idBox === 'box1') {
+        fotoSebo.src='img/seboDaTorre.jpg';
         nomeSebo.textContent = 'Sebo da Torre';
-        local.textContent = 'Localização: R.\nJosé Bonifácio, n° 674';
+        local.textContent = 'Localização: Rua José Bonifácio, n° 674';
     } else if (idBox === 'box2') {
-        nomeSebo.textContent = 'Sebo de Casa A.';
-        local.textContent = 'Localização: R.\nSenador Soares Meireles';
+        fotoSebo.src='img/seboMarela.jpg';
+        nomeSebo.textContent = 'Sebo de Casa Amarela';
+        local.textContent = 'Localização: Rua Senador Soares Meireles';
     } else if (idBox === 'box3') {
-        nomeSebo.textContent = 'L. Praça Sebo';
-        local.textContent = 'Localização: R.\nSenador Soares Meireles';
+        fotoSebo.src='img/seboPraçinha.jpg';
+        nomeSebo.textContent = 'Largo da Praça do Sebo';
+        local.textContent = 'Localização: Rua da roda';
     }
 }

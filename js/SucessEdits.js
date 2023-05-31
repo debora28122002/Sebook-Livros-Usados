@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const editPerfil = ['Perfil editado com sucesso!<br><br>', 'Verifique se um e-mail de confirmação foi enviado.<br><br>', 'Voltar ao <br>início', 'IntroduçãoUser.html']
     const editLivro = ['Livro editado com sucesso!<br><br>', 'Verifique se o livro foi editado corretamente no seu perfil.<br><br>', 'Ir ao perfil', 'VerLivros.html']
-    const addLivro = ['Livro adicionado com sucesso!<br><br>', 'Verifique se o livro foi adicionado corretamente no seu perfil.<br><br>', 'Ver livros', 'MeusLivros.html']
+    const addLivro = ['Livro adicionado com sucesso!<br><br>', 'Verifique se o livro foi adicionado corretamente no seu perfil.<br><br>', 'Ver livros', 'VerLivros.html']
     var conteudo = localStorage.getItem('confirmeishon');
     var link = document.getElementById('confirmLink');
 
