@@ -108,7 +108,6 @@ main{
     height: 50px;
 }
 #scroll{
-    width: 100%; 
     overflow-x: auto; 
     white-space: nowrap; 
     display: flex;
