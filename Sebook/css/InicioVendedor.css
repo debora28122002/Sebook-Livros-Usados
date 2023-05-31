@@ -1,0 +1,57 @@
+@import url('style.css');
+
+#boxText{
+  margin: 0 auto;
+  background: #F3E8DF;
+  border: 3px solid #4B311C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+#titleText{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+#paragraphText{ 
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #000000;
+  text-indent: 20px;
+}
+.Btn{
+  height: 72px;
+  background: #4B311C;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Btns{
+  margin: 0 auto;
+}
+.icon{
+  width: 48px;
+  height: 40px;
+  margin-right: auto;
+  padding-left: 25px;
+}
+.text{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #F3E8DF;
+  text-align: center;
+  margin-right: auto;
+  margin-left: 20px;
+}
+.BtnEditar{
+  background: #956238;
+}

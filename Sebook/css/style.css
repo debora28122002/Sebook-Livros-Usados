@@ -1,0 +1,94 @@
+@import url('header.css');
+
+.font{
+    font-family: 'Inter';
+    font-style: normal;
+}
+.corpo{
+    text-align: center;
+    position: absolute;
+    width: 92%;
+    height: 60%;
+    left: 4%;
+    top: 13%;
+}
+#voltar{
+    position: absolute;
+    left: 7%;
+    top: 6%;
+}
+div a{
+    text-decoration: none;
+    color: #F3E8DF;
+}
+div a:hover{
+    text-decoration: underline;
+    color: #F3E8DF;
+}
+.btn:hover{
+    color: black !important;
+    background: #E3CAB6 !important;
+    text-decoration: underline;
+}
+.btn{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    background: #E3CAB6;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 15px 30px 15px 30px;
+}
+.marginForms{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-group{
+    text-align: left;
+}
+.inputImg{
+    border: 3px solid #4B311C;
+    background: #E3CAB6;
+    border-radius: 20px;
+    Width: auto;
+    Height: auto;
+    padding:40px 30px 40px 30px;
+    margin: 20px;
+}
+.labelTitle{
+    font-weight: 600;
+    font-size: 20px;
+}
+#imgCamera{
+}
+.input{
+    border-radius: 25px;
+    border: 2px solid #4B311C;
+    margin-bottom: 10px;
+    height: 63px;
+}
+
+.positionImg{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 285px) {
+    .container{
+        word-wrap: break-word;
+    }
+    #boxText{
+        hyphens: auto;
+    }
+    .bloco{
+        hyphens: auto;
+    }
+    .telasSm{
+        position: relative;
+        top:15%
+    }
+    .positionImg{
+        display: flex;
+        justify-content: center;
+    }
+}

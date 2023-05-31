@@ -1,0 +1,83 @@
+@import url('PopUp.css');
+@import url('Style.css');
+
+.text2{
+    font-size: 25px;
+    text-decoration-line: underline;
+    text-align: center;
+    font-weight: 700;
+}
+.descricao{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.colunas{
+    margin: 10px 5px 10px 5px;
+    border: 3px solid #4B311C;
+    width: auto;
+    padding: 8px 8px 0px 8px;
+    text-align: center;
+    border-radius: 25px;
+    background: #F3E8DF;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bloco{
+    margin: 0px 40px 0px 40px;
+    position: relative;
+    top:20%
+}
+.imgLivro{
+    width: 120px;
+    height: 150px;
+    border: 3px solid #4B311C;
+    border-radius: 25px;
+}
+.icons{
+    background: #E3CAB6;
+    padding: 5px;
+    align-self: flex-end;
+}
+.bord1{
+    border-radius: 0px 0px 0px 23px;
+    border-right: 3px solid #4B311C;
+}
+.bord2{
+    border-radius: 0px 0px 23px 0px;
+}
+.icones{
+    border-top: 3px solid #4B311C;
+    margin: 0px -8px 0px -8px;
+    background: #E3CAB6;
+    border-radius: 0px 0px 23px 23px;
+}
+#embaçado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#tituloPopUp {
+   text-decoration: none;
+}
+#cancelarPopUp {
+    display: inline-block;
+}
+
+#confirmarPopUp {
+    display: inline-block;
+}
+.popUp{
+    text-align: center;
+}
+@media screen and (max-width: 330px) {
+    #cancelarPopUp{
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <title>Document</title>
+</head>
+<body onload="loginDono()">
+    <div class="margin">
+        <div onclick="voltar()" id="touchVoltar">
+            <div id="touchVoltar">
+                <svg id="voltar" width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.125 28.625V24.875H19.4375C21.4062 24.875 23.1172 24.25 24.5703 23C26.0234 21.75 26.75 20.1875 26.75 18.3125C26.75 16.4375 26.0234 14.875 24.5703 13.625C23.1172 12.375 21.4062 11.75 19.4375 11.75H7.625L12.5 16.625L9.875 19.25L0.5 9.875L9.875 0.5L12.5 3.125L7.625 8H19.4375C22.4688 8 25.0703 8.98438 27.2422 10.9531C29.4141 12.9219 30.5 15.375 30.5 18.3125C30.5 21.25 29.4141 23.7031 27.2422 25.6719C25.0703 27.6406 22.4688 28.625 19.4375 28.625H6.125Z" fill="#1C1B1F"/>
+                    </svg>             
+            </div>
+        </div>
+        <div id="box">
+            <div id="titulo">
+                Login
+            </div><br><br>
+            <form action="">
+                <div class="form-group">
+                    <label for="textbox1" id="label1">E-mail:</label><br>
+                    <input type="email" name="mail" id="textbox1"  class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="textbox2" id="label2">Senha:</label><br>
+                    <input type="password" name="senha" class="form-control" id="textbox2" >
+                    <input type="checkbox" onclick="mostrarOcultarSenha()">   Mostrar Senha
+                </div>
+            </form>
+            <br>
+        </div>
+        <div class="text-center" onclick="acessoLogin();btn();">
+            <div id="btn" class="btn btn-lg shadow-lg">
+                <div id="textbtn">
+                    Entrar
+                </div>
+            </div> 
+        </div>
+    </div><br>
+    <script src="js/Login.js"></script>
+    <script src="js/loginDeb.js"></script>
+    <script src="aplicações/voltar.js"></script>
+    <script>
+        function mostrarOcultarSenha(){
+            var senha = document.getElementById("textbox2");
+            if(senha.type == "password"){
+              senha.type="text";
+            }else{
+              senha.type="password";
+            }
+        }
+    </script>
+</body>
+</html>

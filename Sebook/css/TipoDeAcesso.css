@@ -1,0 +1,69 @@
+body {
+  background: #FFFFFF;
+  height: 100%;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+#voltar{
+  position: absolute;
+  left: 7%;
+  top: 6%;
+}
+
+#profile {
+  max-width: 260px;
+  height: auto;
+  display: inline-block;
+}
+.margin{
+  margin-top: 70px;
+}
+
+#titulo {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+#subTitulo {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin: 13px 0px 13px 0px;
+}
+
+#iconGoogle {
+  width: 15%;
+  height: 62%;
+  align-self: center;
+  justify-content: center;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 84%;
+  height: auto;
+  background: #956238;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 13px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.txtBtn {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 280px) {
+  #profile{
+      width: 180px;
+  }
+}
