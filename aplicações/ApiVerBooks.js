@@ -21,8 +21,8 @@ for (let i = 0; i < qtd; i += 2) {
                 <div class="row">
                     <div class="col colunas">
                         <a href="Book.html">
-                            <div class="imgLivro" onclick="book1()">
-                                <img src="${img1}" alt="" id="crepusculo" width="120px">
+                            <div onclick="book1()">
+                                <img src="${img1}" alt="" id="crepusculo" width="120px" class="imgLivro">
                             </div>
                         </a>
                         <p class="descricao">${titulo1}</p>
