@@ -52,12 +52,22 @@ main{
     z-index: 0;
 }
 
-#caracteristicas {
+#caracteristicas{
     font-weight: 600;
     font-size: 17px;
     line-height: 24px;
     color: #000000;
     padding: 20px;
+}
+
+#autorBook, #anoBook, #generoBook, #unidadesBook, #precoBook{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+}
+#precoBook{
+    padding-bottom: 20px;
 }
 
 #trade {

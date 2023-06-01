@@ -73,12 +73,36 @@
                         <label for="valor" class="labelTitle">Valor:</label>
                         <input type="number" class="form-control input" id="valor">
                     </div><br>
-                    <a href = "Confirmação.html"><button type="button" onclick="editLivro()"class="btn btn-lg shadow-lg">Editar</button></a>
+                    <a href = "Confirmação.html"><button type="button" onclick="call()"class="btn btn-lg shadow-lg">Editar</button></a>
                 </form>
             </div>
         </div>
+        <script>
+            function call() {
+                newBook1();
+                editLivro();
+                window.location.href = 'confirmação.html'
+            }
+        </script>
+        <script src="js/book.js"></script>
         <script src="js/sendEdit.js"></script>
         <script src="js/addPhoto.js"></script>
         <script src="aplicações/voltar.js"></script>
+        <script>
+            var nome = document.getElementById("nome");
+            var autor = document.getElementById("autor");
+            var ano = document.getElementById("ano");
+            var genero = document.getElementById("genero");
+            var unidade = document.getElementById("unidades");
+            var valor = document.getElementById("valor");
+
+            nome.value = localStorage.getItem('titulo1');
+            autor.value = localStorage.getItem('autor1');
+            ano.value = localStorage.getItem('ano1');
+            genero.value = localStorage.getItem('genero1');
+            unidade.value = localStorage.getItem('unidades1');
+            valor.value = localStorage.getItem('preco1');
+
+        </script>
     </body>    
 </html>

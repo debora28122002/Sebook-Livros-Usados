@@ -52,9 +52,18 @@ function Book() {
   imgElement.style.border = '3px solid #4B311C';
 
   if (idBook === 'book1') {
-    nomeBook.textContent = 'Vida e Morte: Crespúsculo Reimaginado';
-    var texto = 'Autor(a): Stephenie Meyer<br>Ano: 2015<br>Gênero: Romance<br>Unidades: 3<br>Preço: R$ 30,50';
-    caracteristicas.innerHTML = texto;
+    var autorBook = document.getElementById('autorBook');
+    var anoBook = document.getElementById('anoBook');
+    var generoBook = document.getElementById('generoBook');
+    var unidadesBook = document.getElementById('unidadesBook');
+    var precoBook = document.getElementById('precoBook');
+
+    nomeBook.textContent = 'Nome: ' + localStorage.getItem('titulo1');
+    autorBook.textContent = 'Autor(a): ' + localStorage.getItem('autor1');
+    anoBook.textContent = 'Ano: ' + localStorage.getItem('ano1');
+    generoBook.textContent = 'Gênero: ' + localStorage.getItem('genero1');
+    unidadesBook.textContent = 'Unidades: ' + localStorage.getItem('unidades1');
+    precoBook.textContent = 'Preço: ' + localStorage.getItem('preco1');
     imgElement.src = 'img/crepusculo.jpg';
 
     fotoBook.appendChild(imgElement);

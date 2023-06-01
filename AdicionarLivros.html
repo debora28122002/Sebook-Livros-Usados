@@ -73,10 +73,19 @@
                         <label for="valor" class="labelTitle">Valor:</label>
                         <input type="number" class="form-control input" id="valor">
                     </div><br>
-                    <a href = "Confirmação.html"><button type="button" class="btn btn-lg shadow-lg" onclick="addLivro()">Adicionar</button></a>
+                    <a href = "Confirmação.html"><button type="button" class="btn btn-lg shadow-lg" onclick="call()">Adicionar</button></a>
                 </form>
             </div>
         </div>
+        <script>
+            function call()
+            {
+                addLivro();
+                addBook();
+                window.location.href = 'Confirmação.html'
+            }
+        </script>
+        <script src="js/addBook.js"></script>
         <script src="js/sendEdit.js"></script>
         <script src="js/addPhoto.js"></script>
         <script src="aplicações/voltar.js"></script>
