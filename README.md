@@ -18,7 +18,7 @@ Para começar com o Sebook, siga estes passos:
 
 1. Clone o repositório:
    ```
-   git clone https://github.com/debora28122002/Sebook.git
+   git clone https://github.com/debora28122002/Sebook-Livros-Usados.git
    ```
 2. Abra o projeto no seu editor de código preferido.
 
